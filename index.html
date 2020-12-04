@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>FarpazFlix</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Average+Sans">
+    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">    
+    
+    <style>
+     .botaoNormal {
+            text-decoration: none;
+            letter-spacing: 0.61px;
+            font-size: 14.6px;
+            color: #E1E1E1;
+            font-family: font-family: Georgia, serif;
+            background: linear-gradient(to bottom, #F40000, #F40000);
+            border-radius: 15px;
+            padding:15px;
+            text-shadow: 0px 1px 2px #000000;
+            box-shadow: 0px 0px 1px #000000;
+            -webkit-transition: all 0.15s ease;
+            -moz-transition: all 0.15s ease;
+            -o-transition: all 0.15s ease;
+            transition: all 0.15s ease;
+        }
+        #button:hover{
+            border: 2.8px solid #9D9D9D;
+        }
+        
+        
+        
+        .botaoAcionado {
+         text-decoration: none;
+            letter-spacing: 0.61px;
+            font-size: 14.6px;
+            color: #E1E1E1;
+            font-family: font-family: Georgia, serif;
+            background: linear-gradient(to bottom, #000000, #000000);
+            border-radius: 15px;
+            padding:15px;
+            text-shadow: 0px 1px 2px #000000;
+            box-shadow: 0px 0px 1px #000000;
+            -webkit-transition: all 0.15s ease;
+            -moz-transition: all 0.15s ease;
+            -o-transition: all 0.15s ease;
+            transition: all 0.15s ease;
+        }
+
+</style>
+    
+</head>
+
+<body style="background: #090809;">
+    <!-- Start: Newsletter Subscription Form -->
+    <div class="newsletter-subscribe" style="background: #090809;">
+        <div class="container" id="painelNavegacao" style="border-style: none;">
+            <!-- Start: Intro -->
+            <div class="intro">
+                <h6 class="text-center" style="color: #f40000;font-size: 20px;text-shadow: 1px 1px 1px #4d575f;font-family: 'Average Sans', sans-serif;">Bem vindo ao</h6>
+                <h1 class="text-center" style="color: #f40000;font-size: 50px;text-shadow: 1px 1px 1px #4d575f;font-family: 'Average Sans', sans-serif;">FarpazFlix</h1>
+                <p class="text-center" style="font-size: 20px;">Quem nunca passou longos minutos revirando o NetFlix em busca de algo interessante para ver?<br>Pensando nisso criamos o FarpazFlix que através de 4 passos simples, colhe dados, analisa e devolve uma lista personalizada de títulos para
+                    tornar sua sessão pipoca incrível!&nbsp;</p>
+            </div>
+            <!-- End: Intro -->
+            <div class="d-block" id="step1" style="text-align: center;border-style: none;">
+                <hr>
+                <a id="linkPasso1" href="#"  data-toggle="modal" data-target="#Passo1" style="text-align: center;color: #f40000;font-size: 25px;font-family: 'Average Sans', sans-serif;">Passo 1: Dados iniciais</a>
+                <hr>
+            </div>
+            
+            <div id="step2" style="text-align: center;border-style: none; display: none" >
+                <hr>
+                <a id="linkPasso2" href="#"   data-toggle="modal" data-target="#Passo2" style="text-align: center;color: #f40000;font-size: 25px;font-family: 'Average Sans', sans-serif;">Passo 2: O que te agrada?</a>
+                <hr>
+            </div>
+            <div id="step3" style="text-align: center;border-style: none; display: none;">
+                <hr>
+                <a id="linkPasso3" href="#"   data-toggle="modal" data-target="#Passo3" style="text-align: center;color: #f40000;font-size: 25px;font-family: 'Average Sans', sans-serif;">Passo 3: O que não é legal?</a>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAIS DAS ETAPAS -->
+    
+    <!-- ETAPA 1 -->
+    <div id="Passo1" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <!-- HEADER -->                
+                <div id="modalHeader1" class="modal-header">
+                    
+                        <h4>Etapa 1</h4> 
+                        <p>Informações iniciais</p>
+                        <button class="btn btn-primary close" type="button" data-dismiss="modal">&times;</button>
+                    
+                </div>
+                
+                <!-- BODY -->                
+                <div id="modalBody1" class="modal-body"  style="text-align: center;border-style: none;">
+                    <div >
+                        <form>
+                            <label>Perfil</label>
+                            <select id="maior">
+                                <optgroup>
+                                    <option value="SIM" selected>Maior de 18 anos</option>
+                                    <option value="NAO">Menor de idade</option>
+                                </optgroup>
+                            </select>
+                            <hr>
+                            <label>Quantos títulos categoria?</label>
+                            <select id="qtde">
+                                <optgroup>
+                                    <option value=3 selected>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5</option>
+                                    <option value=6>6</option> 
+                                    <option value=7>7</option>                                    
+                                    <option value=8>8</option>                                    
+                                    <option value=9>9</option>                                    
+                                </optgroup>
+                            </select>
+                            <hr>                            
+                            <div class="col" style="text-align: left">
+                                <span>Categorias preferidas</span>
+                                     <div class="form-check col-6-sm col-3-lg">
+                                        <label>Ação</label>                                     
+                                     	<span class="btn-switch">
+	                                	<input type="checkbox" id="ckAcao">
+		                                <label for="ckAcao" name="CategoriaAcao">Ação</label>
+	                                    </span>
+	                                 </div>
+                                     <div class="form-check col-6-sm col-3-lg">
+                                        <label>Aventura</label>                                     
+                                     	<span class="btn-switch">
+	                                	<input type="checkbox" id="ckAventura">
+		                                <label for="ckAventura" name="CategoriaAventura">Aventura</label>
+	                                    </span>
+	                                 </div>	                                 
+                                     <div class="form-check col-6-sm col-3-lg">
+                                        <label>Drama</label>                                     
+                                     	<span class="btn-switch">
+	                                	<input type="checkbox" id="ckDrama">
+		                                <label for="ckDrama" name="CategoriaDrama">Drama</label>
+	                                    </span>
+	                                 </div>	 	                                 
+                                     <div class="form-check col-6-sm col-3-lg">
+                                        <label>Documentario</label>                                     
+                                     	<span class="btn-switch">
+	                                	<input type="checkbox" id="ckDocumentario">
+		                                <label for="ckDocumentario" name="CategoriaDocumentario">Documentario</label>
+	                                    </span>
+	                                 </div>	 
+                                     <div class="form-check col-6-sm col-3-lg">
+                                        <label>Humor</label>                                     
+                                     	<span class="btn-switch">
+	                                	<input type="checkbox" id="ckHumor">
+		                                <label for="ckHumor" name="CategoriaHumor">Humor</label>
+	                                    </span>
+	                                 </div>	 
+                                     <div class="form-check col-6-sm col-3-lg">
+                                        <label>Infantil</label>                                     
+                                     	<span class="btn-switch">
+	                                	<input type="checkbox" id="ckInfantil">
+		                                <label for="ckInfantil" name="CategoriaInfantil">Infantil</label>
+	                                    </span>
+	                                 </div>	 
+                                     <div class="form-check col-6-sm col-3-lg">
+                                        <label>Ficção</label>                                     
+                                     	<span class="btn-switch">
+	                                	<input type="checkbox" id="ckFiccao">
+		                                <label for="ckFiccao" name="CategoriaFiccao">Ficcao</label>
+	                                    </span>
+	                                 </div>	    
+                                     <div class="form-check col-6-sm col-3-lg">
+                                        <label>Mistério</label>                                     
+                                     	<span class="btn-switch">
+	                                	<input type="checkbox" id="ckMisterio">
+		                                <label for="ckMisterio" name="CategoriaMisterio">Misterio</label>
+	                                    </span>
+	                                 </div>	 
+                                     <div class="form-check col-6-sm col-3-lg">
+                                        <label>Musical</label>                                     
+                                     	<span class="btn-switch">
+	                                	<input type="checkbox" id="ckMusical">
+		                                <label for="ckMusical" name="CategoriaMusical">Musical</label>
+	                                    </span>
+	                                 </div>	       
+                                     <div class="form-check col-6-sm col-3-lg">
+                                        <label>Policial</label>                                     
+                                     	<span class="btn-switch">
+	                                	<input type="checkbox" id="ckPolicial">
+		                                <label for="ckPolicial" name="CategoriaPolicial">Policial</label>
+	                                    </span>
+	                                 </div>	      
+                                     <div class="form-check col-6-sm col-3-lg">
+                                        <label>Romance</label>                                     
+                                     	<span class="btn-switch">
+	                                	<input type="checkbox" id="ckRomance">
+		                                <label for="ckRomance" name="CategoriaRomance">Romance</label>
+	                                    </span>
+	                                 </div>	            
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- FOOTER -->                    
+                <div id="modalFooter1" class="modal-footer">
+                    <a id="linkPasso1a" href="#" onclick="mostraEtapa('step1','step2');return false;" data-dismiss="modal"> INICIAR </a>                          
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- ETAPA 2 -->
+    <div id="Passo2" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <!-- HEADER -->                
+                <div id="modalHeader2" class="modal-header">
+                    <h3>Etapa 2</h3> 
+                    <br/>
+                    <hr><h6>Escolha seus preferidos</h6>                    
+                    <button class="btn btn-primary close" type="button" href ="#"  data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- BODY -->                
+                <div id="modalBody2" class="modal-body">
+                    <div class="container-fluid">
+                        <div id="linha1" class="row  justify-content-center mb-3">
+                             <div id="item1" class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                                  <!-- card 1 --> 
+                                 <div class="card">
+                                     <div class="card-body">
+                                         <h5> < Nome Filme > </h5>
+                                         <img class="img-fluid border rounded shadow d-sm-flex" src="../capas/rapture.jpg" />
+                                         <p></p>
+                                     </div>
+                                 </div>
+                                 
+                             </div>
+                             
+                             <div id="item2" class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                                  <!-- card 2 --> 
+                                 <div class="card">
+                                     <div class="card-body">
+                                         <h5> < Nome Filme > </h5>
+                                         <p></p>
+                                     </div>
+                                 </div>
+                                 
+                             </div>
+                             
+                             <div id="item3" class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                                  <!-- card 3 --> 
+                                 <div class="card">
+                                     <div class="card-body">
+                                         <h5> < Nome Filme > </h5>
+                                         <p></p>
+                                     </div>
+                                 </div>
+                                 
+                             </div>          
+                             
+                        </div> 
+                        <div id="linha2" class="row justify-content-center mb-3">
+                             <div id="item4" class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                                  <!-- card 4 --> 
+                                 <div class="card">
+                                     <div class="card-body">
+                                         <h5> < Nome Filme > </h5>
+                                         <p></p>
+                                     </div>
+                                 </div>
+                                 
+                             </div>
+                             
+                             <div id="item5" class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                                  <!-- card 5 --> 
+                                 <div class="card">
+                                     <div class="card-body">
+                                         <h5> < Nome Filme > </h5>
+                                         <p></p>
+                                     </div>
+                                 </div>
+                                 
+                             </div>
+                             
+                             <div id="item6" class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                                  <!-- card 6 --> 
+                                 <div class="card">
+                                     <div class="card-body">
+                                         <h5> < Nome Filme > </h5>
+                                         <p></p>
+                                     </div>
+                                 </div>
+                                 
+                             </div>           
+                             
+                        </div> 
+                        
+                    </div>                    
+                    <hr>
+                    <span>conteúdo da etapa 2</span>
+                    <hr>
+                </div>
+                
+                <!-- FOOTER -->                    
+                <div id="modalFooter2" class="modal-footer">
+                    <a id="linkPasso2v" href="#" onclick="mostraEtapa('step2','step1');return false;" data-dismiss="modal"> VOLTAR </a>
+                    <a id="linkPasso2a" href="#" onclick="mostraEtapa('step2','step3');return false;" data-dismiss="modal"> CONFIRMAR </a>                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- ETAPA 3 -->
+    <div id="Passo3" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+                <!-- HEADER -->    
+                <div id="modalHeader3" class="modal-header">
+                    <h5>Etapa 3 - Seleciona o que não agrada muito</h5>
+                    <button class="btn btn-primary close" type="button" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- BODY -->                    
+                <div id="modalBody3" class="modal-body">
+                    <hr>
+                    <span>conteúdo da etapa 3</span>
+                    <hr>
+                </div>
+                
+                
+                <!-- FOOTER -->                    
+                <div id="modalFooter3" class="modal-footer">
+                    <a id="linkPasso3v" href="#" onclick="mostraEtapa('step3','step2')" data-dismiss="modal"> VOLTAR </a>
+                    <a id="linkPasso3a" href="#" onclick="mostraEtapa('step3','step4')" data-dismiss="modal"> CONFIRMAR </a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/farpaz.js"></script>    
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>    
+</body>
+
+</html>
